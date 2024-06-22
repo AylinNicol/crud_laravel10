@@ -40,7 +40,7 @@ class AnimaleController extends Controller
         Animale::create($request->validated());
 
         return Redirect::route('animales.index')
-            ->with('success', 'Animale created successfully.');
+            ->with('success', 'Animal creado con éxito.');
     }
 
     /**
@@ -71,7 +71,7 @@ class AnimaleController extends Controller
         $animale->update($request->validated());
 
         return Redirect::route('animales.index')
-            ->with('success', 'Animale updated successfully');
+            ->with('success', 'Animal editado con éxito.');
     }
 
     public function destroy($id): RedirectResponse
@@ -79,6 +79,6 @@ class AnimaleController extends Controller
         Animale::find($id)->delete();
 
         return Redirect::route('animales.index')
-            ->with('success', 'Animale deleted successfully');
+            ->with('success', 'Animale eliminado con éxito');
     }
 }
