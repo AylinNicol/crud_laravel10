@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ $animale->name ?? __('Show') . " " . __('Animale') }}
+    {{ $animale->name ?? __('Mostrar') . " " . __('Animal') }}
 @endsection
 
 @section('content')

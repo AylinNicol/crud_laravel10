@@ -79,6 +79,6 @@ class AnimaleController extends Controller
         Animale::find($id)->delete();
 
         return Redirect::route('animales.index')
-            ->with('success', 'Animale eliminado con éxito');
+            ->with('success', 'Animal eliminado con éxito');
     }
 }

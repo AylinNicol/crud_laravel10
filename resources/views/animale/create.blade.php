@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ __('Create') }} Animale
+    {{ __('Crear') }} Animal
 @endsection
 
 @section('content')
